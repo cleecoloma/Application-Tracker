@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Job from "./Job";
@@ -6,6 +6,19 @@ import TableHeader from "./TableHeader";
 
 function App() {
   const [jobs, setJobs] = useState([]);
+
+  useEffect(() => {
+    const prevApplications = window.localStorage.getItem('Save_Application_Tracker')
+    if ( prevApplications !== null) setJobs(JSON.parse(prevApplications))
+  }, [])
+
+  useEffect(() => {
+    window.localStorage.setItem(
+      "Save_Application_Tracker",
+      JSON.stringify(jobs),
+      [jobs]
+    );
+  });
 
   function addJob(newJob) {
     setJobs((prevJobs) => {
