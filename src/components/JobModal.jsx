@@ -9,10 +9,10 @@ function JobModal(props) {
   const handleShow = () => setShow(true);
 
   const [job, setJob] = useState({
-    title: "Software Engineer",
-    company: "Microsoft",
-    location: "Redmond, WA",
-    link: "microsoft.com",
+    title: "",
+    company: "",
+    location: "",
+    link: "",
   });
 
   function handleChange(event) {
@@ -34,6 +34,7 @@ function JobModal(props) {
       location: "",
       link: "",
     });
+    handleClose();
     event.preventDefault();
   }
 
@@ -56,6 +57,7 @@ function JobModal(props) {
                 type="text"
                 placeholder="Job Title"
                 value={job.title}
+                required
                 autoFocus
               />
             </Form.Group>
@@ -66,6 +68,7 @@ function JobModal(props) {
                 type="text"
                 placeholder="Company"
                 value={job.company}
+                required
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -75,6 +78,7 @@ function JobModal(props) {
                 type="text"
                 placeholder="Location"
                 value={job.location}
+                required
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -84,6 +88,7 @@ function JobModal(props) {
                 type="text"
                 placeholder="Link"
                 value={job.link}
+                required
               />
             </Form.Group>
           </Form>

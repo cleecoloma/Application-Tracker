@@ -30,6 +30,7 @@ function EditModal(props) {
 
   function submitJob(event) {
     props.onEdit(job);
+    handleClose();
     event.preventDefault();
   }
 
@@ -51,6 +52,7 @@ function EditModal(props) {
                 placeholder="Title"
                 value={job.title}
                 autoFocus
+                required
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -60,6 +62,7 @@ function EditModal(props) {
                 type="text"
                 placeholder="Company"
                 value={job.company}
+                required
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -69,6 +72,7 @@ function EditModal(props) {
                 type="text"
                 placeholder="Location"
                 value={job.location}
+                required
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -78,6 +82,7 @@ function EditModal(props) {
                 type="url"
                 placeholder="Link"
                 value={job.link}
+                required
               />
             </Form.Group>
           </Form>
