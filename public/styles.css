@@ -1,66 +1,78 @@
 * {
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: #3A98B9 ;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #3a98b9;
+  z-index: 1000;
 }
 
 header h1 {
-    background-color: #3A98B9;
-    font-weight: 700;
-    margin-left: 1rem;
-    color: #FFF2F2;
+  background-color: #3a98b9;
+  font-weight: 700;
+  margin-left: 1rem;
+  color: #fff2f2;
 }
 
 footer {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    justify-content: center;
-    background-color: #3A98B9;
-    margin-left: 10%;
-    margin-right: 10%;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #3a98b9;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
 }
 
 .table-header {
-    position: fixed;
-    left: 0;
-    right: 0;
-    margin-top: -3.5rem;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-decoration: underline;
-    font-weight: 400;
-    z-index: 50;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-top: -3.5rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-decoration: underline;
+  font-weight: 400;
+  z-index: 50;
 }
 
 .content {
-    margin-top: 7rem;
-    margin-left: 10%;
-    margin-right: 10%;
+  margin-top: 7rem;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .add-job-button {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .job {
-    color: #FFF1DC;
-    margin-top: 1rem;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  color: #fff1dc;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
